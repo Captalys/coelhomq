@@ -1,14 +1,10 @@
 (ns user
   (:require [mount.core :as mount]
             [clojure.tools.namespace.repl :as tn]
-            [coelhomq.services.web :as web]
-            [coelhomq.services.config :as config]
-            [coelhomq.services.database :as database]))
+            [coelhomq.services.config :as config]))
 
 (defn start []
-  (mount/start #'config/config
-               #'database/datasource
-               #'web/server))
+  (mount/start #'config/config))
 
 (defn stop []
   (mount/stop))
