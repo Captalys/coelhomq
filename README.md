@@ -9,10 +9,10 @@ What you should look for?
 
 There are four queues:
 
-- manual-->never-decrease
-- manual-->never-ask-to-reprocess
-- manual-->ack-with-delay
-- auto-->ack-with-delay
+- **manual-->never-decrease**
+- **manual-->never-ask-to-reprocess**
+- **manual-->ack-with-delay**
+- **auto-->ack-with-delay**
 
 The idea is to understand how different defaults works. The idea of
 `manually` controlling the `ack` behavior is great. You can
