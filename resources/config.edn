@@ -1,0 +1,12 @@
+{:webserver {:port #or [#env WEBSERVER_PORT 4000]}
+ :rabbitmq {:host #or [#env RABBITMQ_HOST "rabbit"]
+            :port #or [#env RABBITMQ_PORT 5672]
+            :username #or [#env RABBITMQ_USERNAME "rabbitmq"]
+            :password #or [#env RABBITMQ_PASSWORD "rabbitmq"]
+            :vhost #or [#env RABBITMQ_VHOST "/"]}
+ :postgresql {:dbname "example"
+              :host "db"
+              :port 5432
+              :dbtype "postgresql"
+              :user "test"
+              :password "test"}}
